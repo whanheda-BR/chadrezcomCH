@@ -70,5 +70,8 @@ public abstract class Peca
 
         // Mover a peça que capturou para a posição da peça capturada
         Mover(pecaCapturada.x, pecaCapturada.y);
+
+        // Lógica para "remover" a peça capturada visualmente
+        pecaCapturada.pictureBox.Visible = false; // Esconde a peça capturada
     }
 }
